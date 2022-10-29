@@ -1,0 +1,94 @@
+@import "stylesheet.css";
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html, body {
+    font-family: Avenir Next Cyr;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2D3945;
+}
+
+/*-----------header-------------*/
+header .header-bg {
+    height: 909px;
+    width: 100%;
+    background-image: url(../images/header/headerbackground.png);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.connect {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    transform: rotate(-1.84deg);
+    margin-top: 59px;
+    text-align: center;
+}
+
+.header-logo {
+    text-align: center;
+    max-width: 275px;
+    display: contents;
+}
+
+.header-logo::after {
+    content: url(../images/header/whitearrow.png);
+    position: relative;
+    right: -160px;
+    top: -50px;
+    z-index: 1;
+}
+
+.header-logo .logo-img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.take {
+    position: relative;
+    text-align: center;
+    top: -100px;
+    left: -20px;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 120%;
+    font-weight: 700;
+    font-style: normal;
+    transform: rotate(-1.54deg);
+}
+
+.prises {
+    position: relative;
+    top: -80px;
+}
+
+.iphone-header, .hyudai-header {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.iphone-header {
+    transform: rotate(-2.28deg);
+}
+
+.hyudai-header {
+    margin-top: 20px;
+}
+
+.red-style {
+    background-color: #E32819;
+}
+
+.header-car {
+    max-width: 843px;
+    position: relative;
+    top: 73px;
+}
+.header-car img{
+    max-width: 100%;
+}
+

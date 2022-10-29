@@ -17,12 +17,14 @@ const appPath = {
         './app/images/**/*.jpg',
         './app/images/**/*.png',
         './app/images/**/*.svg',
-    ]
+    ],
+    fonts: './app/fonts/**/*.*',
 }
 const destPath = {
     css: './dist/css/',
     // js: './dist/js/',
-    img: './dist/images/'
+    img: './dist/images/',
+    fonts: './dest/fonts',
 }
 
 // const jsPath = [
@@ -82,6 +84,12 @@ function server() {
     })
 }
 
+function copyFonts() {
+    return src(appPath.fonts)
+        .pipe(dest(destPath.fonts))
+}
+
+
 function makeFavicon() {
     return src('./app/images/favicon.png')
         .pipe(
@@ -117,5 +125,5 @@ function watchCode() {
     watch(appPath.img, {events: 'add'}, imageMin);
 }
 
-exports.build = series(makeFavicon, copyHtml, imageMin, cssMin)
-exports.default = series(makeFavicon, copyHtml, imageMin, cssMin, parallel(server, watchCode))
+exports.build = series(makeFavicon, copyHtml, imageMin, copyFonts, cssMin)
+exports.default = series(makeFavicon, copyHtml, imageMin, copyFonts, cssMin, parallel(server, watchCode))
