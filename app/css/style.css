@@ -290,6 +290,86 @@ header .header-bg {
 .header-car img {
     max-width: 100%;
 }
+.hiden {
+    display: none;
+}
+.btn-white{
+    width: 228px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+}
+@media (max-width: 768px) {
+
+    .connect {
+        font-size: 18px;
+        line-height: 150%;
+        margin-top: 29px;
+    }
+    .header-logo .logo-img{
+        width: 159px;
+    }
+    .take {
+        top: -50px;
+        left: -20px;
+        font-size: 30px;
+        font-weight: 750;
+    }
+    .prises {
+        position: relative;
+        top: -30px;
+        padding: 0 20px;
+        line-height: 120%;
+    }
+    .header-logo::after {
+        content: url(../images/header/littlearrow.png);
+        max-width: 60px;
+        right: -480px;
+        top: -20px;
+    }
+    .iphone-header, .hyudai-header {
+        font-size: 1rem;
+        line-height: 120%;
+    }
+
+    .iphone-header {
+        transform: rotate(-2.28deg);
+    }
+
+    .hyudai-header {
+        transform: rotate(4.46deg);
+    }
+}
+@media (max-width: 768px){
+    .header-logo::after {
+        right: -430px;
+    }
+}
+@media (max-width: 580px){
+    .header-logo::after {
+        right: -330px;
+    }
+}
+@media (max-width: 460px) {
+    header .header-bg{
+        height: 477px;
+    }
+    .header-logo::after {
+        right: -220px;
+    }
+    .hiden{
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 146%;
+    }
+    .header-car {
+        top: 0px;
+    }
+}
+
 
 /*-----------section1-------------*/
 
@@ -602,6 +682,7 @@ footer .btn-red {
     color: #FFFFFF;
     border: none;
 }
+
 footer .allrights{
     text-align: center;
     font-weight: 400;
