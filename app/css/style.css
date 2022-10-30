@@ -430,6 +430,9 @@ header .header-bg {
     text-align: center;
 
 }
+.section4 img{
+    max-width: 100%;
+}
 
 .section4 .step1 {
     margin-top: 88px;
@@ -493,7 +496,27 @@ header .header-bg {
 .section4 .step5-img img {
     max-width: 100%;
 }
-
+@media (max-width: 992px) {
+    .section4{
+        font-size: 16px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .section4 .step2-img, .step3-text {
+        margin-right: 0;
+    }
+    .section4 .step4-img {
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .section4 .step5 {
+        margin-top: 50px;
+    }
+    .section4 .step1-img, .step2-img, .step3-img, .step4-img, .step5-img{
+        margin-top: 30px;
+        max-width: 100%;
+    }
+}
 /*-----------section5-------------*/
 .section5 .section5-bg {
     text-align: center;
