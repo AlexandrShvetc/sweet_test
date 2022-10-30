@@ -24,7 +24,7 @@ const destPath = {
     css: './dist/css/',
     // js: './dist/js/',
     img: './dist/images/',
-    fonts: './dest/fonts',
+    fonts: './dist/fonts',
 }
 
 // const jsPath = [

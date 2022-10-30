@@ -1,11 +1,207 @@
-@import "stylesheet.css";
+@import "/stylesheet.css";
 @import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-BoldItalic.eot');
+    src: local('../fonts/Avenir Next Cyr Bold Italic'), local('AvenirNextCyr-BoldItalic'),
+    url('../fonts/AvenirNextCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-BoldItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Light.eot');
+    src: local('fonts/Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+    url('../fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Light.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Demi.eot');
+    src: local('fonts/Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+    url('../fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Demi.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-ThinItalic.eot');
+    src: local('fonts/Avenir Next Cyr Thin Italic'), local('AvenirNextCyr-ThinItalic'),
+    url('../fonts/AvenirNextCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-ThinItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Italic.eot');
+    src: local('fonts/Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+    url('../fonts/AvenirNextCyr-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Italic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-HeavyItalic.eot');
+    src: local('fonts/Avenir Next Cyr Heavy Italic'), local('AvenirNextCyr-HeavyItalic'),
+    url('../fonts/AvenirNextCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-HeavyItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-MediumItalic.eot');
+    src: local('fonts/Avenir Next Cyr Medium Italic'), local('Afonts/venirNextCyr-MediumItalic'),
+    url('../fonts/AvenirNextCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-MediumItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-LightItalic.eot');
+    src: local('fonts/Avenir Next Cyr Light Italic'), local('fonts/AvenirNextCyr-LightItalic'),
+    url('../fonts/AvenirNextCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-LightItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Medium.eot');
+    src: local('fonts/Avenir Next Cyr Medium'), local('fonts/AvenirNextCyr-Medium'),
+    url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../fonts/AvenirNextCyr-UltraLightIt.eot');
+    src: local('fonts/Avenir Next Cyr Ultra Light Italic'), local('fonts/AvenirNextCyr-UltraLightIt'),
+    url('../fonts/AvenirNextCyr-UltraLightIt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-UltraLightIt.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-UltraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Regular.eot');
+    src: local('fonts/Avenir Next Cyr Regular'), local('../fonts/AvenirNextCyr-Regular'),
+    url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../fonts/AvenirNextCyr-UltraLight.eot');
+    src: local('Avenir Next Cyr Ultra Light'), local('../fonts/AvenirNextCyr-UltraLight'),
+    url('../fonts/AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-UltraLight.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Heavy.eot');
+    src: local('../fonts/Avenir Next Cyr Heavy'), local('fonts/AvenirNextCyr-Heavy'),
+    url('../fonts/AvenirNextCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Heavy.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Bold.eot');
+    src: local('fonts/Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+    url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-DemiItalic.eot');
+    src: local('fonts/Avenir Next Cyr Demi Italic'), local('fonts/AvenirNextCyr-DemiItalic'),
+    url('../fonts/AvenirNextCyr-DemiItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-DemiItalic.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-DemiItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Thin.eot');
+    src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'),
+    url('../fonts/AvenirNextCyr-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Thin.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
 
 html, body {
     font-family: Avenir Next Cyr;
     font-size: 24px;
     line-height: 29px;
     color: #2D3945;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.67rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.42rem;
+    font-weight: 800;
+}
+
+.red-text {
+    color: #D8271C;
+    text-decoration: underline;
 }
 
 /*-----------header-------------*/
@@ -36,7 +232,8 @@ header .header-bg {
 .header-logo::after {
     content: url(../images/header/whitearrow.png);
     position: relative;
-    right: -160px;
+    max-width: 80px;
+    right: -530px;
     top: -50px;
     z-index: 1;
 }
@@ -44,6 +241,7 @@ header .header-bg {
 .header-logo .logo-img {
     max-width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .take {
@@ -88,7 +286,303 @@ header .header-bg {
     position: relative;
     top: 73px;
 }
-.header-car img{
+
+.header-car img {
     max-width: 100%;
 }
 
+/*-----------section1-------------*/
+
+.section1 {
+    margin-top: 258px;
+
+}
+
+.section1 h3 {
+    text-align: center;
+}
+
+.section1 .conditions {
+    margin-top: 82px;
+    margin-left: 76px;
+    margin-right: 76px;
+}
+
+.cond-first, .cond-second {
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+
+.cond-first {
+    background-image: url(../images/action/1.png);
+}
+
+.cond-second {
+    background-image: url(../images/action/2.png);
+}
+
+.cond-list {
+    flex-wrap: nowrap;
+    padding-top: 25px;
+    font-size: 0.75rem;
+    text-decoration-line: underline;
+    font-weight: 600;
+    color: #CECECE;
+}
+
+.cond-list .row {
+    flex-wrap: nowrap;
+}
+
+.cond-list .row .col {
+    padding: 0;
+    line-height: 120%;
+}
+
+.list {
+    max-width: 38px;
+}
+
+.list img {
+    max-width: 100%;
+}
+
+/*-----------section2-------------*/
+.section2 {
+    margin-top: 113px;
+    color: #15394C;
+}
+
+.section2 .container {
+    background: rgba(124, 253, 92, 0.1);
+    border-radius: 20px;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+
+.section2 .car {
+    padding-left: 30px;
+}
+
+.section2 .car img {
+    max-width: 100%;
+}
+
+.section2 .info {
+    margin-top: 27px;
+}
+
+.section2 .logos img {
+    margin: 10px 15px;
+}
+
+.section2 .info-text {
+    padding-right: 100px;
+    line-height: 120%;
+    font-size: 0.83rem;
+}
+
+/*-----------section3-------------*/
+.section3 {
+    margin-top: 158px;
+}
+
+.section3 h3 {
+    margin-bottom: 20px;
+}
+
+.section3 .chanses {
+    padding-right: 120px;
+}
+
+.section3 .small-text {
+    margin-top: 69px;
+    font-size: 0.67rem;
+}
+
+.section3 .promo {
+    margin-top: 18px;
+}
+
+.section3 .small-logos img {
+    margin: 20px 5px 0 10px;
+}
+
+.section3 .small-logos img:first-of-type {
+    margin: 20px 5px 0 15px;
+}
+
+.section3 .img-phone img {
+    max-width: 100%;
+}
+
+/*-----------section4-------------*/
+.section4 {
+    margin-top: 145px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+.section4 h3 {
+    text-align: center;
+
+}
+
+.section4 .step1 {
+    margin-top: 88px;
+}
+
+.section4 .step1-text, .step2-text, .step3-text, .step4-text, .step5-text {
+    background-repeat: no-repeat;
+    padding-top: 18px;
+    padding-left: 38px;
+    min-height: 92px;
+}
+
+.section4 .step1-text {
+    margin-top: 50px;
+    background-image: url(../images/promocode/1.png);
+}
+
+.section4 .step1 a {
+    font-size: 0.67rem;
+    color: #000000;
+    margin-top: 9px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.section4 .step2, .step3, .step4, .step5 {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.section4 .step2-text {
+    background-image: url(../images/promocode/2.png);
+}
+
+.section4 .step2-img {
+    margin-right: -80px;
+}
+
+.section4 .step3-text {
+    background-image: url(../images/promocode/3.png);
+    margin-right: -140px;
+}
+
+.section4 .step4-text {
+    background-image: url(../images/promocode/4.png);
+}
+
+.section4 .step4-img {
+    margin-right: -90px;
+    padding-left: 40px;
+}
+
+.section4 .step5 {
+    margin-top: 0;
+}
+
+.section4 .step5-text {
+    background-image: url(../images/promocode/5.png);
+}
+
+.section4 .step5-img img {
+    max-width: 100%;
+}
+
+/*-----------section5-------------*/
+.section5 .section5-bg {
+    text-align: center;
+    height: 655px;
+    max-width: 100%;
+    background-image: url(../images/footer/footerbckgrnd.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.section5 h1 {
+    margin-top: 71px;
+}
+
+.section5 .before {
+    margin-top: 24px;
+    font-weight: 750;
+}
+
+.section5 .timer {
+    margin-top: 19px;
+}
+
+.section5 .red-block {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: #D8271C;
+    border-radius: 3.66667px;
+    font-weight: 800;
+    font-size: 24.9333px;
+    line-height: 120%;
+}
+
+.section5 .words {
+    font-size: 0.54rem;
+    line-height: 120%;
+}
+
+.section5 .points {
+    font-weight: 800;
+    margin: 15px 7px;
+}
+
+/*-----------footer-------------*/
+footer h2 {
+    margin-top: 150px;
+    padding-right: 220px;
+}
+
+footer .footer-bg {
+    position: relative;
+    height: 774px;
+    width: 100%;
+    background-image: url(../images/footer/snow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer .footer-bg .row {
+    max-width: 100%;
+}
+
+footer .footer-car img {
+    max-width: 100%;
+    position: relative;
+    left: 240px;
+}
+
+footer .btn-red {
+    margin-top: 43px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    width: 243px;
+    height: 50px;
+    background: #D8271C;
+    border-radius: 50px;
+    color: #FFFFFF;
+    border: none;
+}
+footer .allrights{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
