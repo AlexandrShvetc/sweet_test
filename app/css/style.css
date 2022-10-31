@@ -1,4 +1,3 @@
-@import "/stylesheet.css";
 @import "node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 @font-face {
@@ -956,7 +955,6 @@ header .header-bg {
 /*-----------footer-------------*/
 footer h2 {
     margin-top: 150px;
-    /*padding-right: 220px;*/
 }
 
 footer .footer-bg {
@@ -972,12 +970,6 @@ footer .footer-bg {
 footer .footer-bg .row {
     max-width: 100%;
 }
-
-/*footer .footer-car img {*/
-/*    max-width: 100%;*/
-/*    position: relative;*/
-/*    !*left: 240px;*!*/
-/*}*/
 
 footer .btn-red {
     position: relative;

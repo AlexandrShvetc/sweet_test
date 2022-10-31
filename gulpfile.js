@@ -1,18 +1,12 @@
 const {src, dest, series, watch, parallel} = require('gulp')
-// const scss = require('gulp-sass')
 const imagemin = require('gulp-imagemin');
-// const uglify = require('gulp-uglify');
 const cssmin = require('gulp-cssmin');
-// const sourcemaps = require('gulp-sourcemaps');
-// const concat = require('gulp-concat')
 const connect = require('gulp-connect');
 const favicons = require('gulp-favicons');
 
 
 const appPath = {
-    // scss: './app/scss/**/*.scss',
     css: './app/css/*.css',
-    // js: './app/js/*.js',
     img: [
         './app/images/**/*.jpg',
         './app/images/**/*.png',
@@ -27,46 +21,18 @@ const destPath = {
     fonts: './dist/fonts',
 }
 
-// const jsPath = [
-//     './node_modules/jquery/dist/jquery.min.js',
-//     './node_modules/bootstrap/dist/js/bootstrap.min.js',
-//     './node_modules/scrollreveal/dist/scrollreveal.min.js',
-//     './app/js/script.js'
-// ]
-
-
 function imageMin() {
     return src(appPath.img)
         .pipe(imagemin())
         .pipe(dest(destPath.img))
         .pipe(connect.reload())
 }
-// feature scss
-// function scssCompress() {
-//     return src(appPath.scss)
-//         .pipe(scss({
-//             // outputStyle: 'compressed'
-//         }))
-//         .pipe(dest(destPath.css))
-//         .pipe(connect.reload())
-// }
 
 function copyHtml() {
     return src('./app/*.html')
         .pipe(dest('./dist/'))
         .pipe(connect.reload())
 }
-
-// function jsMin() {
-//     return src(jsPath)
-//         .pipe(sourcemaps.init())
-//         .pipe(concat('script.js'))
-//         .pipe(uglify())
-//         .pipe(sourcemaps.write())
-//         .pipe(dest(destPath.js))
-//         .pipe(connect.reload());
-//
-// }
 
 function cssMin() {
     return src(appPath.css)
@@ -119,9 +85,7 @@ function makeFavicon() {
 
 function watchCode() {
     watch('app/*.html', copyHtml);
-// watch(appPath.scss, scssCompress);
     watch(appPath.css, cssMin);
-    // watch(appPath.js, jsMin);
     watch(appPath.img, {events: 'add'}, imageMin);
 }
 
