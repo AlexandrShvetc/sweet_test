@@ -355,14 +355,25 @@ header .header-bg {
         height: 477px;
     }
     .header-logo::after {
-        right: -220px;
+        right: -240px;
+        top: -32px;
+        height: 54px;
+        width: 30px;
+    }
+    .prises {
+        top: -42px;
     }
     .hiden{
+        margin-top: -25px;
+        margin-bottom: 7px;
         display: flex;
         justify-content: center;
         font-weight: 400;
         font-size: 16px;
         line-height: 146%;
+    }
+    .hyudai-header {
+        margin-top: 15px;
     }
     .header-car {
         top: 0px;
@@ -885,9 +896,36 @@ footer .allrights{
 }
 
 @media (max-width: 576px){
+    footer h2 {
+        margin-bottom: 0;
+    }
     footer .btn-red {
         margin: 40px 15px 0;
         width: 100%;
+    }
+    footer .footer-bg {
+        position: relative;
+        height: 900px;
+        width: 100%;
+        background-image: url(../images/footer/minielcacar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+@media (max-width: 375px) {
+    footer .footer-bg {
+        height: 627px;
+        width: 100%;
+        background-image: url(../images/footer/minielcacar.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    footer .allrights {
+        height: 67%;
+        font-size: 0.67rem;
 
     }
 }
